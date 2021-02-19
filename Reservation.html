@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Rent Car</title>
+    <meta name="Description" content="Reservation">
+</head>
+
+<body>
+    <div class="wrapper reseravationontainer" id="reservation">
+        <nav class="navbar">
+            <img classe="logo" src="images/LOGO.png" alt="logo-icone">
+            <ul id="links">
+                <li><a href="index.html" class="">Acceuil</a></li>
+                <li><a href="gallery.html" class="">Gallerie</a></li>
+                <li><a class="active" href="Reservation.html" class="">Reservation</a></li>
+                <li><a href="contact.html " class="">Contact</a></li>
+            </ul>
+            
+            <img class="menu" id="menu" src="Images/menu.png" alt="menuberger">
+        </nav>
+
+        <div>
+            <h1>Reservation De Votre Véhicule</h1>
+            <div class="reserv">
+                <!--select types de véhicule-->
+                <div class="TX">
+                    <span> types de véhicule</span>
+                    <select id="Vehicule" onchange="myFunction1()">
+                        <option>--Choisir--</option>
+                        <option value="Moto">Moto</option>
+                        <option value="Citadine">Citadine</option>
+                        <option value="Compacte">Compacte</option>
+                        <option value="Berline">Berline (Auto)</option>
+                        <option value="Utilitaire">Utilitaire</option>
+                        <option value="Engin">Engin de Chantier</option>
+                        <option value="Camion">Camion (Auto)</option>
+                    </select>
+                </div>
+                <!--select Carburant-->
+                <div class="TX">
+                    <span> Carburant</span>
+                    <select id='carburant' disabled>
+                        <option>--Choisir--</option>
+
+                    </select>
+                </div>
+                <!--choix boite à vitesse-->
+                <div class="TX">
+                    <span>boite à vitesse</span>
+                    <select id="vitesse">
+                        <option>--Choisir--</option>
+                        <option value="Manuelle">Manuelle</option>
+                        <option value="Automatique">Automatique</option>
+                    </select>
+                </div>
+                <!-- imput les jours -->
+                <div class="TX">
+                    <label>days</label>
+
+                    <input id="days" type="number" min="1" max="31" value="1" onchange="prixPayer()">
+                </div>
+
+                <!--Calculle le prix -->
+
+                <input type="text" id="input-cacule" placeholder="Prix a payer" readonly>
+
+                <!--Esstimation du prix-->
+                <button id="calcPrix">Esstimation du prix</button>
+
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <span>All rights reserved &copy;copyrights 2021</span>
+    </footer>
+
+    <script type="text/javascript" src='js/app.js'></script>
+    <script type="text/javascript" src="js/Reservation.js"></script>
+</body>
+
+</html>

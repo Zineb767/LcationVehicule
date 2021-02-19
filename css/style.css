@@ -1,0 +1,423 @@
+/* style page home */
+
+@import url('https://fonts.google.com/specimen/Acme?query=acme&preview.text_type=custom');
+
+*{
+	padding: 0;
+	margin: 0;
+}
+.wrapper {
+	height: auto;
+    width: 100%;
+
+}
+
+#Home{
+	background: url(../images/Vehicles.jpg) no-repeat;
+    background-size: cover;
+
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+     
+    background: #111;
+    width: 100%;
+    
+}
+.navbar ul{
+    display: flex;
+
+    
+}
+.navbar ul li{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin-left: 80px;
+    display: inline-block;
+    line-height: 80px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 6px 13px;
+    font-family: 'Acme', sans-serif;
+    transition: .4s;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    background-color: #e84b1a;
+    border-radius: 2px;
+
+}
+.navbar img{
+    height: 80px;
+}
+.logo{
+    width: 140px;
+    height: auto;
+    padding: 20px 100px;
+}
+.navbar .menu{
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+    margin-top: 10px;
+    display: none;
+}
+
+.wrapper .IMAGE {
+   
+    width: 100%;
+    height: 80vh;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    font-family: 'Acme', sans-serif;
+    user-select: none;
+    position: relative;
+
+}
+
+.IMAGE h1{
+    color:white;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+.IMAGE P{
+    color:white;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top:10px ;
+    text-align: center;
+}
+.IMAGE .buttons{
+    margin: 35px 280px;
+}
+.buttons button{
+    font-size: 35px;
+    font-weight: bold;
+    color:#243238;
+    border: 1px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: .5s;
+    padding: 21px 26px;
+
+}
+
+.buttons button:hover{
+    background: #e84b1a;
+}
+
+.btn {
+    margin-right: 15px;
+}
+.menuBtn{ 
+    display: none;}
+
+footer{
+        
+    font-family: 'Acme', sans-serif;
+    width: 100%;
+	padding: 3em 0em;
+  	text-align: center;
+    background: rgb(7, 7, 7);
+    position: absolute;
+    font-weight: bold;
+    color: white;
+ 
+
+    }
+
+
+
+                                                                    /* style page gallery */
+
+.container1{
+display: flex;
+justify-content: center;
+align-items: center; 
+flex-wrap: wrap;
+padding: 35px;  
+gap: 62px;
+
+}
+
+.IMG-T{
+  
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+    
+}
+
+.IMG-T p{
+    width: 80%;
+    text-align: center;
+    word-break: break-all;
+
+}
+
+
+.IMG-T img:hover{
+    margin-bottom: 10px;
+    transform: scale(1.05);
+    transition: ease-in-out 1s;
+}
+.IMG-T img{
+    width: 300px;
+    height: 200px;
+}
+
+.type{
+    text-align: center;
+    font-size: 60px;
+    background-color: rgb(247, 247, 234);
+}
+
+                                                                                              /* contact css*/
+#contact{
+    background: url(../images/business-woman-with-the-phone-in-car.jpg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+ #contact h1{
+     text-align: center;
+     padding-top:180px;
+     color: white;
+      font-size: 6vw;
+     
+    }
+
+  #form {
+    position: relative;
+    width: 500px;
+    margin: 50px auto 100px auto;
+  }
+  
+  input {
+    font-family: 'Acme', sans-serif;
+    font-size: 0.875em;
+    width: 470px;
+    height: 50px;
+    padding: 0px 15px 0px 15px;
+    background: rgba(255, 255, 255, 0.507);
+    outline: none;
+    color: #000 !important;
+    border: none;
+    border-bottom: solid 2PX #e84b1a;
+    transition: all 0.3s ease-in-out;
+  }
+  input::placeholder{
+    color: #000 !important;
+      
+  }
+  textarea::placeholder{
+    color: #000 !important;
+      
+  }
+  
+  
+  
+  input:hover {
+    color: #000;
+  }
+  
+  textarea {
+    width: 470px;
+    max-width: 470px;
+    height: 110px;
+    max-height: 110px;
+    padding: 15px;
+    
+    background: transparent;
+    outline: none;
+    
+    color: #000 !important;
+    font-family: 'Acme', sans-serif;
+    
+    border: solid 1px #ffffff;
+    
+    transition: all 0.3s ease-in-out;
+   
+  }
+  
+  
+  
+  #submit {
+    width: 502px;
+    
+    padding: 0;
+    margin: -5px 0px 0px 0px;
+    
+    font-family: 'Acme', sans-serif;
+    color: #b3aca7;
+    
+    outline:none;
+    cursor: pointer;
+    
+    border: solid 1px #ffffff;
+    border-top: none;
+  }
+  
+  #submit:hover {
+    color: #e2dedb;
+    border-bottom: solid 2PX #e84b1a;
+    
+  }
+  
+  
+  #message{
+      border:none;
+      border-bottom: solid 2PX #e84b1a;
+      background-color: rgba(255, 255, 255, 0.5);
+  
+  }
+  #submit{
+      border:none;
+      margin-top: 20px;
+      border: solid 2PX #e84b1a;
+      border-bottom: solid 8PX #e84b1a;
+      transition: ease-in-out 0.5s;
+  }
+
+                                            /* style page Reservation */
+
+  .wrapper{
+    width: 100vw;}
+    .reseravationontainer{
+        /* height: 100vh; */
+    }
+#reservation{
+
+    background: url(../images/focus-2.jpg) no-repeat;
+    background-size: cover;
+	
+}
+#days{
+    margin-left: 30px;
+}
+
+#reservation h1{
+    text-align: center;
+    font-size: 60px;
+    padding: 40px;
+}
+.reserv{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10vh;
+    
+}
+
+.TX{
+    width: 500px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    
+}
+
+.TX select , .TX input{
+   width:100%;
+   height:40px;
+   border:1px solid white;
+   background:white;
+}
+
+
+#input-cacule {
+    margin-top: 40px;
+    margin-left: 266px;
+    width: 202px;
+    background-color: white;
+}
+
+
+button{
+    margin-top: 65px;
+    PADDING: 8px 36px;
+    border-radius: 22px;
+}
+@media only screen and (max-width: 375px) {
+    
+    .navbar ul{
+         flex-direction: column !important;
+         margin-top: 100px;
+         max-height: 0;
+         transition: max-height 1s ease-out;
+        overflow: hidden;
+        margin-left: -100PX;
+
+    }
+    .navbar .menu{
+        display: block;
+    }
+    #form{
+        width: 0px;
+        margin: 0;
+        text-align: center;
+    }
+    input{
+        width: 340px;
+    }
+    textarea{
+        width: 340px;
+    }
+    #submit{
+        width: 370px;
+    }
+    .IMAGE h1{
+        font-size: 24px;
+    }
+    .IMAGE p{
+        font-size: 24px;
+        padding: 50px;
+    }
+    .buttons{
+        
+    margin: 33px 75px !important;
+        
+    
+    }
+    .buttons button{
+        font-size: 24px;
+        
+
+    }
+
+    #gallery .type h2{
+      font-size: 40px;
+    
+    }
+    .reserv {
+        padding: 0px;
+        
+    }
+    .reserv .TX {
+        width: 350px;
+    }
+    #input-cacule {
+        margin-top: 40px;
+        margin-left: 0px;
+    }
+
+}
+.navbar ul.openMenu{
+    z-index: 100;
+    max-height: 500px;
+}
