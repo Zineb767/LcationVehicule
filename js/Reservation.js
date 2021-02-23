@@ -57,7 +57,7 @@
         }
 
         function prixPayer() {
-            prix = 0;
+             prix = 0;
             var v = document.getElementById('Vehicule').value;
             var d = document.getElementById('days').value;
             var carb = document.getElementById("carburant").value;
@@ -142,5 +142,6 @@
         }
 
         document.querySelector('#calcPrix').addEventListener('click', () => {
+            console.log(prix)
             document.querySelector("#input-cacule").value = prix ;
         });

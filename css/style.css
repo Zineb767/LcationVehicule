@@ -20,7 +20,6 @@
 .navbar{
     display: flex;
     justify-content: center;
-     
     background: #111;
     width: 100%;
     
@@ -123,7 +122,7 @@
     display: none;}
 
 footer{
-        
+    
     font-family: 'Acme', sans-serif;
     width: 100%;
 	padding: 3em 0em;
